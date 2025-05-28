@@ -109,8 +109,8 @@ These outcomes may not fully reflect the frameworks’ capabilities, but rather 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/rag-evaluation-thesis.git
-   cd rag-evaluation-thesis
+   git clone https://github.com/ApostolisFalaras/Thesis-Evaluation-of-Modern-RAG-Systems.git
+   cd Thesis-Evaluation-of-Modern-RAG-Systems
    ```
 
 2. Install the required Python libraries:
