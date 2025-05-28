@@ -8,7 +8,7 @@
 
 **Supervisor:** Prof. Manolis Vavalis
 
-**Thesis Conducted:** October 2024 - February 2025\\
+**Thesis Conducted:** October 2024 - February 2025
 
 
 ## 📚 Overview
@@ -78,6 +78,81 @@ Each notebook demonstrates how these tools were used and compares their effectiv
 📝 These datasets were used for academic evaluation purposes only. Please refer to the original dataset providers for license and usage details.
 
 
+## ⚠️ Notes on Framework Execution Challenges
+
+During the evaluation of the **MS MARCO** dataset, the **ARES** and **AutoRAG** frameworks could not be executed successfully, despite separate environment setup and input preparation.
+
+- **ARES** was tested in a dedicated conda environment to avoid dependency conflicts (notably with `datasets` and `ragchecker`). Although some internal code was patched (`load_metric` → `load`), the evaluation did not complete, possibly due to additional internal constraints or incompatibilities, or limitations in the way I applied it.
+
+- **AutoRAG** was also run in a separate conda environment. While inputs were formatted as expected, the evaluation failed at runtime — potentially due to undocumented assumptions, configuration mismatches, or limitations in the way I applied it.
+
+These outcomes may not fully reflect the frameworks’ capabilities, but rather real-world integration challenges and time constraints typical in academic research.
+
+📎 The full logs and diagnostic attempts are available in Section 6 of [`RAG_Evaluation_MS_MARCO.ipynb`](./RAG_Evaluation_MS_MARCO.ipynb), included to support transparency and future debugging by other users or contributors.
+
+
+## 📈 Key Findings
+
+- RAGChecker offered detailed insights into noise sensitivity and hallucination rates
+- RAGAs used LLM prompting to assess contextual and factual grounding
+- Domain-specific legal queries showed greater variance across tools, emphasizing the importance of dataset quality and chunking methods
+- Legal RAG pipelines are more sensitive to chunk size, embedding model, and retriever precision
+
+
+## 💡 Future Work
+
+- Extend benchmarking to more legal subdomains
+- Incorporate memory and re-ranking modules
+- Evaluate performance over multilingual datasets
+
+## 🔧 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/rag-evaluation-thesis.git
+   cd rag-evaluation-thesis
+   ```
+
+2. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Launch the notebooks:
+   ```bash
+   jupyter notebook
+   ```
+   *(or use `jupyter lab` if you prefer the JupyterLab interface)*
+
+4. Run the notebooks in order:
+   - `RAG_Evaluation_MS_MARCO.ipynb`
+   - `RAG_Evaluation_LegalBench-RAG.ipynb`
+
+📝 Note: Some evaluation tools (like ARES and AutoRAG) require separate virtual environments due to dependency conflicts. See Section 6 in the MS MARCO notebook for details.
+
+
+## 📄 License
+
+This project is shared publicly to document my academic work, showcase technical skills, and support others working in similar areas.
+
+It is licensed for **non-commercial, academic, and educational use only**.  
+Commercial use, redistribution, or integration into proprietary software is **not permitted** without express written permission from the author.
+
+If you are interested in using this work in a commercial context, please contact me.
+
+
+## 📑 Citation
+
+```
+@thesis{falaras2025rag,
+  title={Evaluating Modern Retrieval-Augmented Generation (RAG) Systems},
+  author={Falaras, Apostolos},
+  year={2025},
+  institution={University of Thessaly}
+}
+```
+
+⚠️ This thesis project reflects my independent implementation and experimentation (Oct 2024 – Feb 2025). Community feedback and respectful reuse in research are welcome.
 
 
 
