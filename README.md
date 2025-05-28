@@ -50,7 +50,22 @@ RAG systems solve this by combining:
 
 Each notebook demonstrates how these tools were used and compares their effectiveness.
 
+## 📊 Datasets
 
+- **MS MARCO v1.1**  
+  Loaded directly from [Hugging Face Datasets](https://huggingface.co/datasets/microsoft/ms_marco) using the `datasets` library.  
+  The dataset is programmatically downloaded and cached in `.arrow` format via:
+
+  ```python
+  from datasets import load_dataset
+  ms_marco = load_dataset("microsoft/ms_marco", "v1.1", cache_dir="./Datasets/", trust_remote_code=True)
+  ```
+
+- **LegalBench-RAG**  
+  The legal dataset used in this project was obtained from a Dropbox link shared via the official [LegalBench GitHub repository](https://github.com/HazyResearch/legalbench).  
+  It includes legal-domain QA tasks designed to benchmark retrieval-augmented legal reasoning systems.
+
+📝 These datasets were used for academic evaluation purposes only. Please refer to the original dataset providers for license and usage details.
 
 
 
