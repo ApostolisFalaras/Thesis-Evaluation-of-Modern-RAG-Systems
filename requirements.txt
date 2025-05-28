@@ -1,0 +1,12 @@
+pandas
+tqdm
+datasets
+scikit-learn
+openai
+langchain
+langchain-openai
+langchain-community
+ragas
+ragchecker
+autorag
+ares
