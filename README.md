@@ -72,7 +72,7 @@ Each notebook demonstrates how these tools were used and compares their effectiv
   ```
 
 - **LegalBench-RAG**  
-  The legal dataset used in this project was obtained from a Dropbox link shared via the official [LegalBench GitHub repository]([https://github.com/HazyResearch/legalbench](https://github.com/zeroentropy-ai/legalbenchrag?tab=readme-ov-file)).  
+  The legal dataset used in this project was obtained from a Dropbox link shared via the official [LegalBench GitHub repository](https://github.com/zeroentropy-ai/legalbenchrag?tab=readme-ov-file).  
   It includes legal-domain QA tasks designed to benchmark retrieval-augmented legal reasoning systems.
 
 📝 These datasets were used for academic evaluation purposes only. Please refer to the original dataset providers for license and usage details.
