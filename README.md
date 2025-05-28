@@ -118,17 +118,14 @@ These outcomes may not fully reflect the frameworks’ capabilities, but rather 
    pip install -r requirements.txt
    ```
 
-3. Launch the notebooks:
+3. Launch the conda environment from the Anaconda terminal:
    ```bash
    jupyter notebook
    ```
-   *(or use `jupyter lab` if you prefer the JupyterLab interface)*
 
-4. Run the notebooks in order:
+4. Run the notebooks:
    - `RAG_Evaluation_MS_MARCO.ipynb`
    - `RAG_Evaluation_LegalBench-RAG.ipynb`
-
-📝 Note: Some evaluation tools (like ARES and AutoRAG) require separate virtual environments due to dependency conflicts. See Section 6 in the MS MARCO notebook for details.
 
 
 ## 📄 License
