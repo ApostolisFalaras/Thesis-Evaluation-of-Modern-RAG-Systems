@@ -8,7 +8,7 @@
 
 **Supervisor:** Prof. Manolis Vavalis
 
-**Thesis Conducted:** October 2024 - February 2025
+**Thesis Conducted:** October 2024 - February 2025\\
 
 
 ## 📚 Overview
